@@ -1,1 +1,1 @@
-missings and losts lists is a ruby on rails web application I create to list the things I missed and cross them off when I find them.
+missings and losts lists is a ruby on rails web application I created to list the things I missed and cross them off when I find them.
