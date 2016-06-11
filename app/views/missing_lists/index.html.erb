@@ -1,0 +1,10 @@
+<% @missing_lists.each do |missing_list| %>
+  <div class="index_row clearfix">
+    <p class="todo_list_sub_title"><%= missing_list.description %></p>
+  </div>
+<% end %>
+
+<div class="links">
+  <%= link_to "New Missing List", new_missing_list_path %>
+</div>
+

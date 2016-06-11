@@ -1,0 +1,4 @@
+<%= form_for([@missing_list, @missing_list.missing_items.build]) do |f| %>
+	<%= f.text_field :content, placeholder: "New missing thing!" %>
+	<%= f.submit %>
+<% end %>

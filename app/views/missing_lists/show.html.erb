@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @missing_list.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @missing_list.description %>
+</p>
+<div id="todo_items_wrapper">
+	<%= render @missing_list.missing_items %>
+	<div id="form">
+		<%= render "missing_items/form" %>
+	</div>
+</div>
+
+<div class="links">
+<%= link_to 'Edit', edit_missing_list_path(@missing_list) %> |
+	<%= link_to 'Delete', missing_list_path(@missing_list), method: :delete, data: { confirm: "Are you sure?" }
+ %> |
+<%= link_to 'Back', missing_lists_path %>
+</div>
